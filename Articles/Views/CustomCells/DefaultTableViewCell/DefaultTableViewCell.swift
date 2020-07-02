@@ -9,16 +9,11 @@
 import UIKit
 
 class DefaultTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+  // MARK: - IBOutlet
+  @IBOutlet weak var contentLabel: UILabel!
+  
+  // MARK: - Methods
+  func configureCell(_ text: String) {
+    contentLabel.text = text
+  }
 }

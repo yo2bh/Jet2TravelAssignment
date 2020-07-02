@@ -9,16 +9,50 @@
 import UIKit
 
 class ArticleImageTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+  // MARK: - IBOutlets
+  @IBOutlet weak var articleImage: UIImageView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+  }
+  
+  //MARK: - Methods
+  func configureCell(_ imageUrl: String, _ row: Int) {
+    setArticleImage(imageUrl, row)
+  }
+  
+  func setArticleImage(_ url: String, _ row: Int) {
+    if let fileName = getFileName(url),
+      let image = Utils.getSavedImage(named: fileName) {
+      DispatchQueue.main.async { [weak self] in
+        if self?.tag == row {
+         self?.articleImage.image = image
+        }
+      }
+    } else {
+      downloadImage(url, row)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+  }
+  
+  func downloadImage(_ url: String, _ row: Int) {
+    NetworkManager.shared.sendRequest(urlString: url) {[weak self](data, error) in
+      if let data = data,
+        let fileName = self?.getFileName(url),
+        let path = Utils.saveImage(data, fileName) {
+        debugPrint("Article image save at location \(path)")
+        DispatchQueue.main.async {[weak self] in
+          if self?.tag == row {
+            self?.articleImage.image = UIImage(data: data)
+          }
+        }
+      }  else if let error = error {
+        debugPrint("Error while downloading article image - \(error.localizedDescription)")
+      }
     }
-    
+  }
+  
+  private func getFileName(_ url: String) -> String? {
+    let splitArray = Utils.splitString(input: url, separatedBy: Constants.forwardSlash)
+    return splitArray.count == 8 ? splitArray[6] + Constants.underScore + splitArray[7] : nil
+  }
 }

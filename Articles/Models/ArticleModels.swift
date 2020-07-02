@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct Articles: Codable {
+  let content: String
+  let comments, likes: Int
+  let media: [Media]
+  let user: [User]
+}
+
+struct Media: Codable {
+  let image, title, url: String
+}
+
+struct User: Codable {
+  let createdAt, name, avatar, lastname, designation: String
+}

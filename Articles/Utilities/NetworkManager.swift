@@ -7,13 +7,6 @@
 //
 
 import Foundation
-import UIKit
-
-enum RequestType: String {
-  case Post = "POST"
-  case Get = "GET"
-  case Put = "PUT"
-}
 
 class NetworkManager {
   static let shared = NetworkManager()
@@ -22,7 +15,7 @@ class NetworkManager {
     print("Initalized the network manager instance")
   }
   
-  func sendRequest(urlString: String, type: RequestType, parameters: [String :Any]?, completionHandler: @escaping(Data?, Error?) -> Void) {
+  func sendRequest(urlString: String, completionHandler: @escaping(Data?, Error?) -> Void) {
     // 1. Make URL from UrlString
     let url = URL(string: urlString)
     // 2. Create the URLRequest object
