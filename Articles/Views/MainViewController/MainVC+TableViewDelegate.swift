@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - Table view delegate methods
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
   func numberOfSections(in tableView: UITableView) -> Int {
     return articlesDataSource.count

@@ -12,10 +12,6 @@ class ArticleImageTableViewCell: UITableViewCell {
   // MARK: - IBOutlets
   @IBOutlet weak var articleImage: UIImageView!
   
-  override func awakeFromNib() {
-    super.awakeFromNib()
-  }
-  
   //MARK: - Methods
   func configureCell(_ imageUrl: String, _ row: Int) {
     setArticleImage(imageUrl, row)

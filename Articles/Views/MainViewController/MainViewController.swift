@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
   fileprivate var mainViewModel = MainViewModel()
   var articlesDataSource = [Articles]()
 
+  // MARK: - Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     registerCustomCell()
