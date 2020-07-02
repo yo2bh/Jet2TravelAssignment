@@ -1,4 +1,4 @@
-# Jet2TravelAssignment
+# Jet2 Travel Assignment
 This repo contents the code for Jet2 Travel assignment.
 
 - Used **MVVM** design architecture
