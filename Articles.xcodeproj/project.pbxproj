@@ -16,6 +16,11 @@
 		D166042924ABD05D006C0307 /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D166042724ABD05D006C0307 /* DefaultTableViewCell.xib */; };
 		D166042C24ABD421006C0307 /* LikeCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166042A24ABD421006C0307 /* LikeCommentTableViewCell.swift */; };
 		D166042D24ABD421006C0307 /* LikeCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D166042B24ABD421006C0307 /* LikeCommentTableViewCell.xib */; };
+		D1B01B7424AE1721003F0D6E /* Exo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B01B6F24AE162E003F0D6E /* Exo2-Bold.ttf */; };
+		D1B01B7524AE1721003F0D6E /* Exo2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B01B7324AE162E003F0D6E /* Exo2-Light.ttf */; };
+		D1B01B7624AE1721003F0D6E /* Exo2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B01B7024AE162E003F0D6E /* Exo2-Medium.ttf */; };
+		D1B01B7724AE1721003F0D6E /* Exo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B01B7224AE162E003F0D6E /* Exo2-Regular.ttf */; };
+		D1B01B7824AE1721003F0D6E /* Exo2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B01B7124AE162E003F0D6E /* Exo2-SemiBold.ttf */; };
 		D1B74B4E24A90E5B00BA0119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B74B4D24A90E5B00BA0119 /* AppDelegate.swift */; };
 		D1B74B5024A90E5B00BA0119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B74B4F24A90E5B00BA0119 /* SceneDelegate.swift */; };
 		D1B74B5224A90E5B00BA0119 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B74B5124A90E5B00BA0119 /* MainViewController.swift */; };
@@ -40,6 +45,11 @@
 		D166042724ABD05D006C0307 /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
 		D166042A24ABD421006C0307 /* LikeCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCommentTableViewCell.swift; sourceTree = "<group>"; };
 		D166042B24ABD421006C0307 /* LikeCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCommentTableViewCell.xib; sourceTree = "<group>"; };
+		D1B01B6F24AE162E003F0D6E /* Exo2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Bold.ttf"; sourceTree = "<group>"; };
+		D1B01B7024AE162E003F0D6E /* Exo2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Medium.ttf"; sourceTree = "<group>"; };
+		D1B01B7124AE162E003F0D6E /* Exo2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBold.ttf"; sourceTree = "<group>"; };
+		D1B01B7224AE162E003F0D6E /* Exo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.ttf"; sourceTree = "<group>"; };
+		D1B01B7324AE162E003F0D6E /* Exo2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.ttf"; sourceTree = "<group>"; };
 		D1B74B4A24A90E5B00BA0119 /* Articles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Articles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B74B4D24A90E5B00BA0119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B74B4F24A90E5B00BA0119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +111,18 @@
 				D166042B24ABD421006C0307 /* LikeCommentTableViewCell.xib */,
 			);
 			path = LikeCommentTableViewCell;
+			sourceTree = "<group>";
+		};
+		D1B01B6E24AE161F003F0D6E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1B01B6F24AE162E003F0D6E /* Exo2-Bold.ttf */,
+				D1B01B7324AE162E003F0D6E /* Exo2-Light.ttf */,
+				D1B01B7024AE162E003F0D6E /* Exo2-Medium.ttf */,
+				D1B01B7224AE162E003F0D6E /* Exo2-Regular.ttf */,
+				D1B01B7124AE162E003F0D6E /* Exo2-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D1B74B4124A90E5B00BA0119 = {
@@ -170,6 +192,7 @@
 		D1B74B6824A90F8500BA0119 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1B01B6E24AE161F003F0D6E /* Fonts */,
 				D1B74B5924A90E5E00BA0119 /* Assets.xcassets */,
 				D1B74B5E24A90E5E00BA0119 /* Info.plist */,
 			);
@@ -276,11 +299,16 @@
 			files = (
 				D1B74B6E24A9114500BA0119 /* UserTableViewCell.xib in Resources */,
 				D1B74B5D24A90E5E00BA0119 /* LaunchScreen.storyboard in Resources */,
+				D1B01B7524AE1721003F0D6E /* Exo2-Light.ttf in Resources */,
+				D1B01B7724AE1721003F0D6E /* Exo2-Regular.ttf in Resources */,
+				D1B01B7624AE1721003F0D6E /* Exo2-Medium.ttf in Resources */,
 				D1B74B5A24A90E5E00BA0119 /* Assets.xcassets in Resources */,
 				D166042D24ABD421006C0307 /* LikeCommentTableViewCell.xib in Resources */,
 				D166042924ABD05D006C0307 /* DefaultTableViewCell.xib in Resources */,
+				D1B01B7424AE1721003F0D6E /* Exo2-Bold.ttf in Resources */,
 				D166041F24ABBE37006C0307 /* ArticleImageTableViewCell.xib in Resources */,
 				D1B74B5524A90E5B00BA0119 /* Main.storyboard in Resources */,
+				D1B01B7824AE1721003F0D6E /* Exo2-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,8 @@ class ArticleImageTableViewCell: UITableViewCell {
   
   //MARK: - Methods
   func configureCell(_ imageUrl: String, _ row: Int) {
+    // Show the empty image as place holder till the image download
+    articleImage.image = UIImage()
     setArticleImage(imageUrl, row)
   }
   

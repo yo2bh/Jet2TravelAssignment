@@ -30,6 +30,8 @@ class UserTableViewCell: UITableViewCell {
   }
   
   func configureCell(_ dataSource: User, _ row: Int) {
+    // Show empty image still the avatar downloads
+    avatar.image = UIImage()
     username.text = dataSource.name + Constants.singleSpace + dataSource.lastname
     designation.text = dataSource.designation
     createAt.text = Utils.splitString(input: dataSource.createdAt, separatedBy: Constants.dataSeparator).first
