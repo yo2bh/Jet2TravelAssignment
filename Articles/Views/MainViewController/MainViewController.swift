@@ -27,17 +27,16 @@ class MainViewController: UIViewController {
     tableView.isHidden = true
     ActivityIndicator.shared.start(view)
     self.mainViewModel.getArticles(success: gotResponse(_:), failure: gotFailure(_:))
-    print("Appear")
   }
   
   func registerCustomCell() {
-    let userXib = UINib(nibName: "UserTableViewCell", bundle: nil)
+    let userXib = UINib(nibName: Constants.userTableViewCell, bundle: nil)
     tableView.register(userXib, forCellReuseIdentifier: Constants.userCell)
-    let articleImageXib = UINib(nibName: "ArticleImageTableViewCell", bundle: nil)
+    let articleImageXib = UINib(nibName: Constants.articleImageTableViewCell, bundle: nil)
     tableView.register(articleImageXib, forCellReuseIdentifier: Constants.articleCell)
-    let defaultCellXib = UINib(nibName: "DefaultTableViewCell", bundle: nil)
+    let defaultCellXib = UINib(nibName: Constants.defaultTableViewCell, bundle: nil)
     tableView.register(defaultCellXib, forCellReuseIdentifier: Constants.defaultCell)
-    let likesCommentsXib = UINib(nibName: "LikeCommentTableViewCell", bundle: nil)
+    let likesCommentsXib = UINib(nibName: Constants.likeCommentTableViewCell, bundle: nil)
     tableView.register(likesCommentsXib, forCellReuseIdentifier: Constants.likesCommentsCell)
   }
   
@@ -51,7 +50,7 @@ class MainViewController: UIViewController {
   }
   
   func gotFailure(_ error: String) {
-    print(error)
+    debugPrint(error)
   }
 }
 

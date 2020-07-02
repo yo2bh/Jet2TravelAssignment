@@ -23,4 +23,8 @@ struct Constants {
   static let likesCommentsCell = "likescommentscell"
   static let forwardSlash = "/"
   static let underScore = "_"
+  static let userTableViewCell = "UserTableViewCell"
+  static let articleImageTableViewCell = "ArticleImageTableViewCell"
+  static let defaultTableViewCell = "DefaultTableViewCell"
+  static let likeCommentTableViewCell = "LikeCommentTableViewCell"
 }
